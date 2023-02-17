@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprendiendo el Desarrollo Web">
+    <meta name="author" content="Hussein Palomino">
+    <meta name="copyright" content="Desarrollo Web">
+    <meta name="keywords" content="Educacion">
+    <title>Happy Kids</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__titulo pt-2 pb-1 text-center">happy kids</div>
+        <nav class="header__nav">
+            <div class="header__nav__contenedor contenedor">
+                <ul class="header__nav__contenedor__menu ">
+                    <div class="header__nav__contenedor__menu__buscador">
+                        <form action="">
+                            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                            <input type="text" placeholder="Search...">
+                        </form>
+                    </div>
+
+                    <div class="header__nav__contenedor__menu__link ">
+                        <li class="active">
+                        <a href="#">Home</a> </li>
+                        <li class="">
+                        <a href="#">ShopCollection</a> </li>
+                        <li class="">
+                        <a href="#">OurStory</a> </li>
+                        <li class="">
+                        <a href="#">Contact</a> </li>
+                    </div>
+                    <div class="header__nav__contenedor__menu__acceso">
+                        <div class="header__nav__contenedor__menu__acceso__login">
+                            <a href="#"><i class="fa-solid fa-circle-user"></i> Log In</a>   
+                        </div>
+
+                        <div class="header__nav__contenedor__menu__acceso__carrito">
+                            <a href="#"><i class="fa-solid fa-cart-shopping"></i> <span class="contador">0</span> </a>    
+                        </div> 
+                    </div>
+                </ul>
+                
+                <div class="header__nav__contenedor__btnMenu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="header__portada">
+            <div class="header__portada__flotante">
+                <div class="header__portada__flotante__chat">
+                    <a href="#">
+                       <i class="fas fa-smile-beam"></i> Let's Chat!
+                    </a>
+                </div>
+                <div class="header__portada__flotante__chatSmall">
+                    <a href="#">
+                        <i class="fa-regular fa-comment-dots"></i>
+                    </a>
+                </div>
+                <div class="header__portada__flotante__redesSociales">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="producto">
+        <div class="producto__contenedor contenedor text-center">
+            <h2 class="titulo-n1 pt-5 pb-5 text-center">New Arrivals</h2>
+            <div class="producto__contenedor__card">
+                <div class="producto__contenedor__card__item">
+                    <img src="img/modelo01.png" alt="Modelo1">
+                    <div class="producto__contenedor__card__item__descri pb-1">I'am  a product</div>
+                    <div class="producto__contenedor__card__item__price pb-1">$19.99</div>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="producto__contenedor__card__item">
+                    <img src="img/modelo02.png" alt="Modelo2">
+                    <div class="producto__contenedor__card__item__descri pb-1">I'am  a product</div>
+                    <div class="producto__contenedor__card__item__price pb-1">$19.99</div>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="producto__contenedor__card__item">
+                    <img src="img/modelo03.png" alt="Modelo3">
+                    <div class="producto__contenedor__card__item__descri pb-1">I'am  a product</div>
+                    <div class="producto__contenedor__card__item__price pb-1">$19.99</div>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="producto__contenedor__card__item">
+                    <img src="img/modelo04.png" alt="Modelo4">
+                    <div class="producto__contenedor__card__item__descri pb-1">I'am  a product</div>
+                    <div class="producto__contenedor__card__item__price pb-1">$19.99</div>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="producto__contenedor__card__btnAll pt-5 pb-3">
+                <button>Shop All</button>
+            </div>
+        </div>
+        <hr>
+    </section>
+    <footer class="footer">
+        <div class="footer__contenedor contenedor">
+            <h2 class="titulo-n1 pt-4 pb-4 text-center">happy kids</h2>
+            <div class="footer__contenedor__caja">
+                <div class="footer__contenedor__caja__menu text-center">
+                    <ul >
+                        <li class="active"><a href="#" >Home</a></li>
+                        <li><a href="#">Shop Collection</a></li>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__contenedor__caja__socialMedia">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+
+                <div class="footer__contenedor__caja__question text-center">
+                    <ul >
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Story Policy</a></li>
+                        <li><a href="#">Payment Methods</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer__contenedor__suscribir pt-5 text-center">
+                <h2 class="titulo-n2 pb-1">Join Our Mailing List</h2>
+                <form action="" class="pt-1 pb-1">
+                    <input type="text" placeholder="Enter your email here*">
+                    <button>Subscribe Now</button>
+                </form>
+            </div>
+            <div class="footer__contenedor__copyright pt-5 pb-2 text-center">
+                &#169; 2023 by Hussein Palomino. Todos los derechos reservados
+            </div>
+        </div>
+    </footer>
+    <script src="js/hkids.js"></script>
+</body>
+</html>

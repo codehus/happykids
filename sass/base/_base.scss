@@ -1,0 +1,40 @@
+// 🔥🔥 BREAKPOINT 🔥🔥
+// 16px es la base del tamño html
+// 992 -> 62em
+// 768 -> 48em
+// 576 -> 36em
+// 480 -> 30em
+$bp_large: 62em;
+$bp_medium: 48em;
+$bp_small: 36em;
+$bp-smallX: 30em;
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:link,
+a:visited{
+    text-decoration: none;
+    outline: 0;
+    font-weight: 500;
+    color: #000;
+}
+
+ul{
+    list-style: none;
+}
+
+html{
+    font-size: 62.5%;
+    // EN base 10px
+}
+
+.scroll{
+    overflow: hidden;
+}

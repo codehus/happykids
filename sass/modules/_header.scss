@@ -1,0 +1,237 @@
+.header{
+    font-family: $font-roboto;
+    @media only screen and (max-width:$bp-medium){
+        margin-top: 3rem;
+    }
+    &__titulo{
+        font-size: 4rem;
+        font-weight: 900;
+        transition: all .3s;
+        @media only screen and (max-width:$bp-medium){
+            font-size: 3rem;
+            transition: all .3s;
+        }
+    }
+    &__nav{
+        &__contenedor{
+            padding: 2rem 0;
+            font-size: 1.5rem;
+            @media only screen and (max-width:$bp-medium){
+                padding: 0;
+            }
+            &__menu{
+                display: flex;
+                @media only screen and (min-width:$bp-medium){
+                    justify-content: space-evenly;
+                }
+                transition: all .3s;
+                &__buscador{
+                    button{
+                        border: none;
+                        cursor: pointer;
+                        background-color: white;
+                        i{
+                            margin-right: 1rem;
+                        }
+                    }
+                    input{
+                        border: none;
+                        outline: 0;
+                        width: 10rem;
+                    }
+                    @media only screen and (max-width: $bp-medium){
+                        order: 3;
+                        form:hover{
+                            padding-bottom: 1rem;
+                            border-bottom: 1px solid #000;
+                        }
+                    }
+                }
+                &__link{
+                    display: inline-flex;
+                    gap: 3rem;
+                    li.active a{
+                        color: #e67e22;
+                    }
+                    @media only screen and (max-width: $bp-medium){
+                        order: 2;
+                        flex-direction: column;
+                        align-items: center;
+                    }  
+                }
+                &__acceso{
+                    display: inline-flex;
+                    gap: 2rem;
+                    &__login{
+                        a{
+                            display: inline-flex;
+                            align-items: center;
+                            gap: .5rem;
+                            i{
+                                font-size: 2rem;
+                                color: black;
+                            }  
+                        }
+                        @media only screen and (max-width: $bp-medium){
+                            order: 1;
+                        }
+                                    
+                    }
+                    &__carrito{
+                        & .contador{
+                            display: inline-flex;
+                            width: 1.8rem;
+                            height: 1.8rem;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: black;
+                            color: white;
+                            border-radius: 50%; 
+                        }
+                        a{
+                            display: inline-flex;
+                            align-items: center;
+                            gap: .5rem;
+                            i{
+                                font-size: 2rem;
+                                color: black;
+                            }  
+                        }
+                        @media only screen and (max-width:$bp-medium){
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            padding: 2.5rem 3rem;
+                        }
+                    }        
+                }
+                @media only screen and (max-width: $bp-medium){
+                    background-color: white;
+                    font-weight: bold;
+                    position: absolute;
+                    position: fixed;
+                    top: 0;
+                    z-index: 1;
+                    right: -100%;
+                    width: 100%;
+                    height: 100vh;
+                    flex-direction: column;
+                    align-items: center;
+                    padding-top: 10rem;
+                    gap: 5rem;
+                    transition: all .5s;
+                    &.mostrarMenu{
+                        right: 0;
+                        transition: all .5s;
+                    }  
+                }       
+            }
+            &__btnMenu{
+                position: absolute;
+                z-index: 1;
+                top: 0;
+                right: 0;
+                padding: 2rem 2rem;
+                font-size: 2.5rem;
+                display: none;
+                @media only screen and (max-width: $bp-medium){
+                    cursor: pointer;
+                    display: block;
+                }
+            }
+        }
+    }
+    &__portada{
+            // position: relative;
+            background-image: url('../img/portada.png');
+            height: calc(100vh - 136px);
+            background-position: center;
+            background-size: cover;
+            transition: all .3s;
+            @media only screen and (max-width:$bp-medium){
+                height: 50vh;
+                transition: all .3s;
+            }
+            &__flotante{
+                &__chat{
+                    a{
+                        position: absolute;
+                        position: fixed;
+                        background-color: black;
+                        color: white;
+                        padding: 1.5rem 3rem;
+                        bottom: 0;
+                        right: 0;
+                        margin-bottom: 5rem;
+                        margin-right: 2rem;
+                        text-align: center;
+                        font-family: $font-roboto;
+                        border: none;
+                        cursor: pointer;
+                        font-size: 1.5rem;
+                    }
+                    @media only screen and (max-width: $bp-medium) {
+                        display:none;
+                    }
+                
+                }
+                &__chatSmall{
+                    display: none;
+                    @media only screen and (max-width:$bp-medium){
+                        display: block;
+                        a{
+                            position: absolute;
+                            position: fixed;
+                            background-color: black;
+                            width: 6rem;
+                            height: 6rem;
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            color: white;
+                            padding: 1.5rem 3rem;
+                            bottom: 0;
+                            right: 0;
+                            margin-bottom: 3rem;
+                            margin-right: 1rem;
+                            text-align: center;
+                            font-family: $font-roboto;
+                            border: none;
+                            cursor: pointer;
+                            font-size: 1.5rem;
+                            i{
+                                font-size: 3rem;
+                            }
+                        }
+                    }
+                }
+                &__redesSociales{
+                    position: absolute;
+                    position: fixed;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    top: 0;
+                    right: 0;
+                    margin-top: 25rem;
+                    margin-right: 3rem;
+                    i{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 3rem;
+                        height: 3rem;
+                        background-color: black;
+                        border-radius: 50%;
+                        color: white;
+                        font-size: 1.5rem;
+                    }
+                    @media only screen and (max-width: $bp-medium){
+                        display: none;
+                    }
+                }
+
+            }
+    }
+}

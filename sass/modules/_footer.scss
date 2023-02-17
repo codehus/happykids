@@ -1,0 +1,77 @@
+.footer{
+    &__contenedor{
+        &__caja{
+            display: flex;
+            justify-content: space-around;
+            font-family: $font-roboto;
+            font-size: 1.2rem;
+            line-height: 2.2rem;
+            @media only screen and (max-width:$bp-medium){
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+                
+            }
+            [class^="footer__contenedor__caja"] {
+                width: calc(100% / 3 - 2rem);
+            }
+
+            &__menu{
+                li.active a{
+                    color: #e67e22;
+                }
+                @media only screen and (max-width:$bp-medium){
+                    order: 2;
+                    width: 100%!important;
+                }
+            }
+            &__socialMedia{
+                 display: inline-flex;
+                 justify-content: center;
+                 gap: 3rem;
+                 font-size: 2rem;
+                 a{
+                    color: black;
+                }
+                @media only screen and (max-width:$bp-medium){
+                    order: 1;
+                    width: 100%!important;
+                    margin-bottom: 2rem;
+                }                
+             }
+            &__question{
+                @media only screen and (max-width:$bp-medium){
+                    order: 3;
+                    width: 100%!important;
+                 }
+            }
+
+        }
+        &__suscribir{
+            input{
+                border: .1rem solid black;
+                padding: 1rem 1rem;
+                width: 30rem;
+                outline: 0;
+                @media only screen and (max-width: $bp-medium){
+                    width: 100%;
+                    margin-bottom: 1rem;
+                }
+            }
+            button{
+                background-color: black;
+                color: white;
+                border: black solid 1px;
+                padding: 1rem 2rem;
+                cursor: pointer;
+                @media only screen and (max-width: $bp-medium){
+                width: 100%;
+                }
+            }
+        }
+        &__copyright{
+            font-family: $font-roboto;
+            font-size: 1.5rem;
+        }
+    }
+}
